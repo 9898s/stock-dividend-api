@@ -62,7 +62,7 @@ public class TokenProvider {
         if (!StringUtils.hasText(token)) return false;
 
         var claims = this.parseClaims(token);
-        return claims.getExpiration().before(new Date());
+        return !claims.getExpiration().before(new Date());
     }
 
     private Claims parseClaims(String token) {
