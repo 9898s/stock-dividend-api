@@ -11,6 +11,6 @@ public class AlreadyExistUserException extends AbstractException {
 
     @Override
     public String getMessage() {
-        return "이미 존해자는 사용자명입니다.";
+        return "이미 존재하는 사용자명입니다.";
     }
 }
