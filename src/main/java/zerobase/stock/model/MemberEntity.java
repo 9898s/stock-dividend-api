@@ -14,11 +14,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Getter
-@Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity(name = "MEMBER")
+@Builder
 public class MemberEntity implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
